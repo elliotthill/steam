@@ -8,6 +8,7 @@ class SteamGame:
     def __init__(self, appid=None, country='US'):
         self.appid = str(appid)
         self.country = country
+        self.name = None
         self._request()
 
     def _request(self):
